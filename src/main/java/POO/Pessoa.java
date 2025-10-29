@@ -41,5 +41,62 @@ public class Pessoa {
 
 
 
-    //Métodos
+    //Métodos,Ações,Comportamentos,Atividades
+    /*
+    1. Método Sem Retorno e Sem Parâmetro
+    2. Método Sem Retorno e Com Parâmetro
+    3. Método Com Retorno e Sem Parâmetro
+    4. Método Com Retorno e Com Parâmetro
+     */
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getNome(){
+
+        return nome;
+
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+    public int getIdade(){
+        return idade;
+    }
+
+    public void setWhatsapp(String whatsapp){
+        this.whatsapp = whatsapp;
+    }
+
+    public String getWhatsapp(){
+        return whatsapp;
+    }
+
+
+    public void apresentar(){
+
+        System.out.println(nome);
+        System.out.println(cpf);
+        System.out.println(idade);
+        System.out.println(whatsapp);
+
+    }
+
+    public String getApresentacao(){
+
+        return (nome+", "+cpf+", "+idade+","+whatsapp);
+    }
+
 }
+
